@@ -4,9 +4,9 @@ const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectId;
 const cors = require('cors');
 const admin = require('firebase-admin');
-// require('dotenv').config()
-// console.log(process.env.DB_PASS);
-const uri = `mongodb+srv://volunteer-network:qlYtJhjqqwZseOzg@cluster0.n968s.mongodb.net/volunteer-network?retryWrites=true&w=majority`;
+require('dotenv').config()
+console.log(process.env.DB_PASS);
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.n968s.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 const port = 5000;
 
