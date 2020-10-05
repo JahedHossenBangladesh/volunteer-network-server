@@ -10,7 +10,7 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
 
 const port = 5000;
 
-
+//this is a message
 
 
 var serviceAccount = require("./volunteer-network-916a4-firebase-adminsdk-mq1dy-37ae20b24a.json");
@@ -21,7 +21,7 @@ admin.initializeApp({
 });
 
 
-const pass = "qlYtJhjqqwZseOzg";
+const pass = "";
 
 
 const app = express();
